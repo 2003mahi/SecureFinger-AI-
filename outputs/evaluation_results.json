@@ -1,0 +1,8 @@
+{
+  "threshold_at_3pct_bpcer": 0.01,
+  "apcer_at_threshold": 0.0,
+  "bpcer_at_threshold": 0.0,
+  "eer": 0.0,
+  "eer_threshold": 0.9391281008720398,
+  "total_test_samples": 18
+}

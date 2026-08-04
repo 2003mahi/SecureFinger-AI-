@@ -1,0 +1,10 @@
+{
+  "best_epoch": 25,
+  "best_val_loss": 0.012387728422052331,
+  "final_train_loss": 0.012451853649690748,
+  "final_val_loss": 0.012387728422052331,
+  "final_train_acc": 1.0,
+  "final_val_acc": 1.0,
+  "total_epochs": 25,
+  "timestamp": "2026-08-04T23:07:57.682648"
+}
