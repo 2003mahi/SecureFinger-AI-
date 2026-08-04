@@ -4,6 +4,7 @@ import numpy as np
 import cv2
 import torch
 import torch.nn as nn
+from typing import Tuple
 from sklearn.metrics import (
     confusion_matrix,
     roc_curve,

@@ -11,11 +11,11 @@ def compute_gradcam(
 ) -> np.ndarray:
     """Compute Grad-CAM heatmap for a single input image.
 
-    Uses a backward hook on the last feature layer to capture gradients,
-    which works even when the backbone features are frozen.
+    Uses a forward hook to capture features and a backward pre-hook
+    to capture gradients, which works even when the backbone features are frozen.
 
     Args:
-        model: Trained LivenessNet with a registered backward hook.
+        model: Trained LivenessNet.
         image_tensor: Preprocessed tensor of shape (1, 3, 224, 224).
         target_class: Index of the class to visualise. If None, uses argmax.
 
@@ -29,20 +29,20 @@ def compute_gradcam(
         for param in model.features.parameters():
             param.requires_grad = True
 
-    image_tensor = image_tensor.requires_grad_(True)
+    features = None
+    grads = None
 
-    gradients = {}
-    activations = {}
+    def save_features(module, input, output):
+        nonlocal features
+        features = output.detach()
 
-    def forward_hook(module, input, output):
-        activations["features"] = output.detach()
-
-    def backward_hook(module, grad_input, grad_output):
-        gradients["features"] = grad_output[0].detach()
+    def save_grads(module, grad_output):
+        nonlocal grads
+        grads = grad_output[0].detach()
 
     last_layer = model.features[-1]
-    last_layer.register_forward_hook(forward_hook)
-    last_layer.register_full_backward_hook(backward_hook)
+    fwd_handle = last_layer.register_forward_hook(save_features)
+    bwd_handle = last_layer.register_full_backward_pre_hook(save_grads)
 
     output = model(image_tensor)
 
@@ -53,18 +53,18 @@ def compute_gradcam(
     score = output[0, target_class]
     score.backward()
 
+    fwd_handle.remove()
+    bwd_handle.remove()
+
     if was_frozen:
         for param in model.features.parameters():
             param.requires_grad = False
 
-    if "features" not in gradients or gradients["features"] is None:
-        raise RuntimeError("Backward hook did not capture gradients.")
-
-    grads = gradients["features"]
-    acts = activations["features"]
+    if features is None or grads is None:
+        raise RuntimeError("Failed to compute Grad-CAM.")
 
     weights = torch.mean(grads, dim=(2, 3), keepdim=True)
-    cam = torch.sum(weights * acts, dim=1).squeeze(0)
+    cam = torch.sum(weights * features, dim=1).squeeze(0)
 
     cam = F.relu(cam)
     cam = cam - cam.min()

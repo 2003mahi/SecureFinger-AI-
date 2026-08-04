@@ -46,11 +46,10 @@ if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.image(image, caption="Input Fingerprint", use_container_width=True)
 
-    image_array = np.array(image)
-    if len(image_array.shape) == 2:
-        image_array = cv2.cvtColor(image_array, cv2.COLOR_GRAY2RGB)
-    elif image_array.shape[2] == 4:
-        image_array = cv2.cvtColor(image_array, cv2.COLOR_RGBA2RGB)
+    if image.mode == 'L':
+        image = image.convert('RGB')
+    elif image.mode == 'RGBA':
+        image = image.convert('RGB')
 
     cfg = Config()
     preprocess = T.Compose([
@@ -59,7 +58,7 @@ if uploaded_file is not None:
         T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ])
 
-    img_tensor = preprocess(image_array).unsqueeze(0).to(device)
+    img_tensor = preprocess(image).unsqueeze(0).to(device)
 
     with torch.no_grad():
         output = model(img_tensor)
@@ -85,7 +84,7 @@ if uploaded_file is not None:
 
     st.subheader("Grad-CAM Heatmap")
     heatmap = compute_gradcam(model, img_tensor, target_class=1)
-    overlay = overlay_gradcam(image_array, heatmap, alpha=0.5)
+    overlay = overlay_gradcam(np.array(image), heatmap, alpha=0.5)
 
     col_h1, col_h2 = st.columns(2)
     with col_h1:

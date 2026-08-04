@@ -1,1 +1,431 @@
 2026-08-05 00:17:37.890 Uvicorn server started on :::8501
+2026-08-05 01:08:10.932 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:08:10.980 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 62, in <module>
+    img_tensor = preprocess(image_array).unsqueeze(0).to(device)
+                 ~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\transforms.py", line 362, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\functional.py", line 465, in resize
+    _, image_height, image_width = get_dimensions(img)
+                                   ~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\functional.py", line 80, in get_dimensions
+    return F_pil.get_dimensions(img)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\_functional_pil.py", line 34, in get_dimensions
+    raise TypeError(f"Unexpected type {type(img)}")
+TypeError: Unexpected type <class 'numpy.ndarray'>
+2026-08-05 01:08:21.620 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:08:21.634 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 62, in <module>
+    img_tensor = preprocess(image_array).unsqueeze(0).to(device)
+                 ~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\transforms.py", line 362, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\functional.py", line 465, in resize
+    _, image_height, image_width = get_dimensions(img)
+                                   ~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\functional.py", line 80, in get_dimensions
+    return F_pil.get_dimensions(img)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\_functional_pil.py", line 34, in get_dimensions
+    raise TypeError(f"Unexpected type {type(img)}")
+TypeError: Unexpected type <class 'numpy.ndarray'>
+2026-08-05 01:16:52.483 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:16:52.530 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 62, in <module>
+    img_tensor = preprocess(image_array).unsqueeze(0).to(device)
+                 ~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\transforms.py", line 362, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\functional.py", line 465, in resize
+    _, image_height, image_width = get_dimensions(img)
+                                   ~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\functional.py", line 80, in get_dimensions
+    return F_pil.get_dimensions(img)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torchvision\transforms\_functional_pil.py", line 34, in get_dimensions
+    raise TypeError(f"Unexpected type {type(img)}")
+TypeError: Unexpected type <class 'numpy.ndarray'>
+2026-08-05 01:22:20.059 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:22:22.654 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:22:22.695 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:23:21.832 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:23:22.149 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 86, in <module>
+    heatmap = compute_gradcam(model, img_tensor, target_class=1)
+  File "C:\Users\DELL\Downloads\Assignment 3\src\gradcam.py", line 54, in compute_gradcam
+    score.backward()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\_tensor.py", line 623, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\__init__.py", line 395, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\graph.py", line 979, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\utils\hooks.py", line 210, in hook
+    hook_grad_outputs = user_pre_hook(self.module, self.grad_outputs)
+TypeError: compute_gradcam.<locals>.backward_hook() missing 1 required positional argument: 'grad_output'
+2026-08-05 01:23:25.894 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:23:26.130 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 86, in <module>
+    heatmap = compute_gradcam(model, img_tensor, target_class=1)
+  File "C:\Users\DELL\Downloads\Assignment 3\src\gradcam.py", line 54, in compute_gradcam
+    score.backward()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\_tensor.py", line 623, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\__init__.py", line 395, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\graph.py", line 979, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\utils\hooks.py", line 210, in hook
+    hook_grad_outputs = user_pre_hook(self.module, self.grad_outputs)
+TypeError: compute_gradcam.<locals>.backward_hook() missing 1 required positional argument: 'grad_output'
+2026-08-05 01:26:02.930 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:26:03.687 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 86, in <module>
+    heatmap = compute_gradcam(model, img_tensor, target_class=1)
+  File "C:\Users\DELL\Downloads\Assignment 3\src\gradcam.py", line 52, in compute_gradcam
+    score.backward()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\_tensor.py", line 623, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\__init__.py", line 395, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\graph.py", line 979, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\utils\hooks.py", line 210, in hook
+    hook_grad_outputs = user_pre_hook(self.module, self.grad_outputs)
+TypeError: compute_gradcam.<locals>.backward_hook() missing 1 required positional argument: 'grad_output'
+2026-08-05 01:26:14.607 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:26:14.724 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 86, in <module>
+    heatmap = compute_gradcam(model, img_tensor, target_class=1)
+  File "C:\Users\DELL\Downloads\Assignment 3\src\gradcam.py", line 48, in compute_gradcam
+    grads = torch.autograd.grad(score, features, retain_graph=True)[0]
+            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\__init__.py", line 594, in grad
+    result = _engine_run_backward(
+        outputs,
+    ...<5 lines>...
+        accumulate_grad=False,
+    )
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\graph.py", line 979, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+RuntimeError: One of the differentiated Tensors does not require grad
+2026-08-05 01:26:41.926 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:26:42.086 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 86, in <module>
+    heatmap = compute_gradcam(model, img_tensor, target_class=1)
+  File "C:\Users\DELL\Downloads\Assignment 3\src\gradcam.py", line 48, in compute_gradcam
+    grads = torch.autograd.grad(score, features, retain_graph=True)[0]
+            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\__init__.py", line 594, in grad
+    result = _engine_run_backward(
+        outputs,
+    ...<5 lines>...
+        accumulate_grad=False,
+    )
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\graph.py", line 979, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\utils\hooks.py", line 210, in hook
+    hook_grad_outputs = user_pre_hook(self.module, self.grad_outputs)
+TypeError: compute_gradcam.<locals>.backward_hook() missing 1 required positional argument: 'grad_output'
+Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Program Files\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-08-05 01:27:32.886 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:27:33.080 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 86, in <module>
+    heatmap = compute_gradcam(model, img_tensor, target_class=1)
+  File "C:\Users\DELL\Downloads\Assignment 3\src\gradcam.py", line 48, in compute_gradcam
+    grads = torch.autograd.grad(score, features, retain_graph=True)[0]
+            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\__init__.py", line 594, in grad
+    result = _engine_run_backward(
+        outputs,
+    ...<5 lines>...
+        accumulate_grad=False,
+    )
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\graph.py", line 979, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\utils\hooks.py", line 210, in hook
+    hook_grad_outputs = user_pre_hook(self.module, self.grad_outputs)
+TypeError: compute_gradcam.<locals>.backward_hook() missing 1 required positional argument: 'grad_output'
+2026-08-05 01:29:14.795 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:29:15.486 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 807, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Downloads\Assignment 3\app.py", line 86, in <module>
+    heatmap = compute_gradcam(model, img_tensor, target_class=1)
+  File "C:\Users\DELL\Downloads\Assignment 3\src\gradcam.py", line 54, in compute_gradcam
+    score.backward()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\_tensor.py", line 623, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\__init__.py", line 395, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\autograd\graph.py", line 979, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+  File "C:\Users\DELL\AppData\Roaming\Python\Python314\site-packages\torch\utils\hooks.py", line 210, in hook
+    hook_grad_outputs = user_pre_hook(self.module, self.grad_outputs)
+TypeError: compute_gradcam.<locals>.backward_hook() missing 1 required positional argument: 'grad_output'
+2026-08-05 01:30:15.532 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:30:17.633 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:30:17.646 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:31:10.031 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:31:11.833 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-08-05 01:31:11.839 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
